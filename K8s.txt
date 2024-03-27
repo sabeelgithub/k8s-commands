@@ -1,3 +1,17 @@
+minikube:-
+
+minikube status => For getting status local k8s cluster.
+
+minikube start => For starting local k8s cluster.
+
+minikube stop => For stopping running local k8s cluster.
+
+minikube delete => For deleting a local k8s cluster.
+
+minikube dashbord =>For accessing k8s dashboard running within the minikube.
+
+
+
 kubectl:-
 
 kubectl version => To get version.
@@ -24,7 +38,7 @@ kubectl get pod/pods => To view list of all the pods in the cluster.
 
 kubectl get pod/pods <pod_name> =>  To get specific pod.
 
-kubectl get pod -o wide => To view list of pods with more information
+kubectl get pod -o wide => To view list of pods with more information.
 
 kubectl describe pod <pod_name> => Describe a specific pod.
 
@@ -34,7 +48,7 @@ kubectl get services/svc <service_name> => To get specific pod service.
 
 kubectl describe service <service_name> => Describe a specific service.
 
-kubectl get deployment/deployments => To list deployments
+kubectl get deployment/deployments => To list deployments.
 
 kubectl get deployment -o wide => To view list of deployment with more information.
 
@@ -50,4 +64,18 @@ kubectl apply-f k8s.yaml => For appling k8s configuration yaml file.
 
 kubectl delete -f k8s.yaml => For deleting k8s configuration yaml file.
 
-kubectl get secret/secrets => For listing secretes
+kubectl get secret/secrets => For listing secretes.
+
+kubectl create -h => create help commands.
+
+kubectl create deployment <specify_name> --image=<image_name>  => For creating deploymet with specified image.
+
+kubectl get replicasets => For getting list of  replicasets.
+
+kubectl edit deployment <deployment_name> => For editing configuration file.
+
+kubectl logs <pod_name> => For logging.
+
+kubectl exec -it <pod_name> -- bin/bash => For opening interactive mode of specified pod.
+
+kubectl delete deployment <deployment_name> => For deleting deployment.
