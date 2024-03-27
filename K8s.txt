@@ -1,0 +1,53 @@
+kubectl:-
+
+kubectl version => To get version.
+
+kubectl version --short => To get version in short. 
+
+kubectl config view => Get the configuration of the cluster                     
+
+kubectl cluster-info => Get cluster information.
+
+kubectl get all => For listing all components of cluster.
+
+kubectl get node/nodes => To view  list of all the nodes in the cluster.
+
+kubectl get node -o wide => To view list of nodes with more information
+
+kubectl get node/nodes <node_name> => To get specific node.
+
+kubectl describe node <node_name> => Describe a specific node.
+
+kubectl drain <node-name> => Drain a node for maintenance.
+
+kubectl get pod/pods => To view list of all the pods in the cluster.
+
+kubectl get pod/pods <pod_name> =>  To get specific pod.
+
+kubectl get pod -o wide => To view list of pods with more information
+
+kubectl describe pod <pod_name> => Describe a specific pod.
+
+kubectl get services/svc => To view  list of all the services in the cluster.
+
+kubectl get services/svc <service_name> => To get specific pod service.
+
+kubectl describe service <service_name> => Describe a specific service.
+
+kubectl get deployment/deployments => To list deployments
+
+kubectl get deployment -o wide => To view list of deployment with more information.
+
+kubectl get deployment <deployment_name> <deployment_name> => To get specific deployment.
+
+kubectl describe deployment <deployment_name> => Describe a specific deployment.
+
+kubectl get deployment <deployment_name> -o yaml => To get yaml configuration of specific deployment.
+
+kubectl get deployment fds-deployment -o yaml > result.yaml => For saving deployment status in a seperate file.
+
+kubectl apply-f k8s.yaml => For appling k8s configuration yaml file.
+
+kubectl delete -f k8s.yaml => For deleting k8s configuration yaml file.
+
+kubectl get secret/secrets => For listing secretes
