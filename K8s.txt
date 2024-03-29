@@ -79,3 +79,13 @@ kubectl logs <pod_name> => For logging.
 kubectl exec -it <pod_name> -- bin/bash => For opening interactive mode of specified pod.
 
 kubectl delete deployment <deployment_name> => For deleting deployment.
+
+kubectl get namespace =>For getting namespaces
+
+kubectl create namespace <name_space_name> => For creating namespace
+
+kubectl api-resources --namespaced=true => For listig components in namespaced
+
+kubectl api-resources --namespaced=false => For listing components not in namespaced
+
+
